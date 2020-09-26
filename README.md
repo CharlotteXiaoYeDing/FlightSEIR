@@ -4,6 +4,8 @@ Repo for paper `Incorporating Dynamic Flight Network in SEIR to Model Mobility b
 
 # Prerequisites
 
+See `requirements.txt`.
+
 This project leverages [pyflightdata](https://pyflightdata.readthedocs.io/en/latest/pyflightdata.html) API, a wrapper around [flightradar24](https://www.flightradar24.com/), to fetch flights data.
 
 # Project Structure
