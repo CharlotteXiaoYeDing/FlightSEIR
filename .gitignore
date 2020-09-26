@@ -1,6 +1,6 @@
 /venv/
-/logs/
-/datasets/
+*.log
+/datasets/*/*.txt
 /.idea/
 __pycache__/
 */__pycache__/

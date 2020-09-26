@@ -27,3 +27,7 @@ Note: by default, `pyflightdata` only returns historic data for the past 7 days.
 4. To process test positive rates for provinces, run `src/data/process_positive_rate_can.ipynb` to produce `can_covid19_processed.csv`
 5. To generate interpolated test positive rates, run `src/data/interpolate_positive_rate.ipynb` to produce `interpolated_positive_rates.csv`
 6. To generate data used for experiments, run `src/data/flight-seir-Canada.ipynb`. The generated data will be saved in the `states` folder.
+
+# Experiments
+
+Run `src/model/early_time_prediction.ipynb` or `src/model/reopen_simulation.ipynb`.
