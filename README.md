@@ -16,6 +16,8 @@ Note: due to limitations of `pyflightdata`, `fetch_unique_flights.py` can only f
 Note: by default, `pyflightdata` only returns historic data for the past 7 days. In order to obtain 90/360 days of past flights, one must subscribe to the Silver/Gold plan on flightradar24 and login programmatically with `f.login("username", "password")`.
 5. Download `owid-covid-data.csv` from [Total COVID-19 Tests Performed by Country](https://data.humdata.org/dataset/c87c4508-9caf-4959-bf06-6ab4855d84c6) and place it under `datasets` folder.
 6. Download `can_covid19.csv` from [Coronavirus disease (COVID-19): Outbreak update](https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html#a1) and place it under `datasets` folder.
+7. Download `reported_flights_stats.csv` from [Domestic and international Itinerant movements](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2310000801) and place it under `datasets` folder.
+8. Download `canada_population_by_prov.csv` and place it under `datasets` folder.
 
 # Data Processing
 
@@ -24,3 +26,4 @@ Note: by default, `pyflightdata` only returns historic data for the past 7 days.
 3. To process test positive rates for the world, run `src/data/process_positive_rate_world.ipynb` to produce `test-rate-processed.csv`
 4. To process test positive rates for provinces, run `src/data/process_positive_rate_can.ipynb` to produce `can_covid19_processed.csv`
 5. To generate interpolated test positive rates, run `src/data/interpolate_positive_rate.ipynb` to produce `interpolated_positive_rates.csv`
+6. To generate data used for experiments, run `src/data/flight-seir-Canada.ipynb`. The generated data will be saved in the `states` folder.
