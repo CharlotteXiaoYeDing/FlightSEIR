@@ -1,10 +1,28 @@
 # FlightSEIR
 
-A placeholder repo for paper `Incorporating Dynamic Flight Network in SEIR to Model Mobility between Populations`. Code to reproduce the experiments in the paper will be available soon.
+Repo for paper `Incorporating Dynamic Flight Network in SEIR to Model Mobility between Populations`. 
 
 # Prerequisites
 
 This project leverages [pyflightdata](https://pyflightdata.readthedocs.io/en/latest/pyflightdata.html) API, a wrapper around [flightradar24](https://www.flightradar24.com/), to fetch flights data.
+
+# Project Structure
+```
+.
+|-- datasets
+|   |-- airports
+|   |-- edge_lists
+|   |-- historic_flights
+|   |-- unique_flights
+|-- graphs
+|   |-- covid
+|   |-- flights
+|-- logs
+|-- src
+|   |-- data
+|   |-- model
+|-- states
+```
 
 # Data Collection
 
